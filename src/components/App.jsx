@@ -13,10 +13,9 @@ class App extends Component {
 
     options = Object.keys(this.state);
 
-    onLeaveFeedback = e => {
-        const stateName = e.target.name;
+    onLeaveFeedback = option => {
         this.setState(prevState => {
-            return { [stateName]: prevState[stateName] + 1 };
+            return { [option]: prevState[option] + 1 };
         });
     };
 
