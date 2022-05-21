@@ -3,6 +3,7 @@ import s from './Statistics.module.css';
 
 const Statistics = ({ items, total, percentage }) => {
     const { good, neutral, bad } = items;
+
     return (
         <ul className={s.list}>
             <li className={s.item}>good: {good}</li>
